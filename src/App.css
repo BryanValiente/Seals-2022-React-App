@@ -12,16 +12,30 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+@media screen and (min-width: 800px) {
+  .h1 {
+    margin-left: auto; margin-right: auto;
+  }
+  .img {
+  display: block; margin-left: auto; margin-right: auto; width: 500px; height:
+  400px;
+  }
+  .p {
+  text-align: center;
+  }
+  .li {
+  text-align: center;
+  }
+  }
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* background-color:steelblue; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
@@ -35,4 +49,75 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* code I put from previous vs code file */
+p {
+  color:cornflowerblue;
+}
+
+img {
+  width: 160px;
+  height: 200px;
+   /* border: solid 1px black; */
+  position: relative;
+  /* animation: img 2s infinite alternate-reverse;  */
+}
+  /* color:crimson */
+  /* animation: h1 2s infinite alternate-reverse;  */
+  /* animation: h1 5s infinite alternate-reverse;
+  animation-delay: 2s;
+  animation-timing-function: ease-out; */
+
+
+li {
+  color:cadetblue
+}
+
+@keyframes img {
+  from {
+      left: 0px;
+  }
+
+  to {
+      left: 1000px;
+  }
+
+}
+@keyframes moveone {
+  /* from {
+      color: black;
+  }
+  to {
+      color:red;
+  } */
+  0%   {color: black;}
+  25%  {color: orange;}
+  50%  {color: red;}
+  100% {color: gold ;}
+  
+}
+@keyframes move {
+  /* from {
+      left: 0px;
+  }
+
+  to {
+      left: 1000px;
+  } */
+  /* 0%   {left: 0px;}
+  25%  {left: 25px;}
+  50%  {left: 50px;}
+  100% {left: 100px;} */
+  /* background-image: linear-gradient(90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%); */
 }
